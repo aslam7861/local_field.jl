@@ -21,7 +21,7 @@ function non(X; revers= false)
              end
           end
      end
-     push!(T,S)
+    # push!(T,S)
      if n == 0
         push!(F,i)
      end
