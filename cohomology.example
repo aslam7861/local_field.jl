@@ -1,0 +1,30 @@
+k= number_field(x^2-2)[1]
+[96] S=NfOrdIdl[]
+[97] for p in prim
+   for y in  [x[1] for x in prime_decomposition(maximal_order(k),p)]
+       push!(S, y)
+    end 
+    end
+[98] S
+[99] u,mu = Hecke.sunit_group(S)
+[100] #Main.GrpCoh.CohomologyModule()
+[101] G, mG = Oscar.automorphism_group(PermGroup,k)
+[102] Main.GrpCoh.CohomologyModule(G,mu)
+[103] mu
+[104] typeof(mu)
+[105] H= G
+[106] u = domain(mu)
+[107] U = [mu(g) for g = gens(u)]
+[108] zk = codomain(mu)
+[109] k = nf(zk)
+[110] G, mG = automorphism_group(PermGroup, k)
+[111] k = Hecke.nf(zk)
+[112] zk
+[113] k=zk
+[114] G, mG = automorphism_group(PermGroup, k)
+[115] ac = [hom(u, u, [preimage(mu, zk(mG(g)(k(x)))) for x = U]) for g = gens(H)]
+[116] typeof(ac)
+[117] Main.GrpCoh.CohomologyModule(H,ac)
+[118] Hecke.percent_P()
+
+julia> 
