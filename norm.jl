@@ -2,7 +2,7 @@
 
 ######################### norm_qadic############################################
 ##codes to be added in Hecke
-
+##The following function are missing are not available
 function Hecke.norm(a::qadic)
     L = parent(a)
     n = degree(parent(a))
