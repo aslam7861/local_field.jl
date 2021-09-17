@@ -6,7 +6,7 @@
 ##@doc
 
 ####
-
+#####git check
 
 function Hecke.norm(a::qadic)
     L = parent(a)
