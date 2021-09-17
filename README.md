@@ -1,1 +1,3 @@
-# Julia_Ali.jl
+Hi, I’m @aslam7861(Aslam Ali)
+- 👀 I’m interested in computational Algebra
+- 🌱 I’m currently learning ...
