@@ -1,12 +1,7 @@
 
 
 ######################### norm_qadic############################################
-
-
-##@doc
-
-####
-#####git check
+##codes to be added in Hecke
 
 function Hecke.norm(a::qadic)
     L = parent(a)
